@@ -6,8 +6,8 @@ document.addEventListener('DOMContentLoaded', getTodos);
 todoButton.addEventListener('click', addTodo);
 todoList.addEventListener('click', deleteCheck);
 
-function addTodo(event) {
-    event.preventDefault();
+function addTodo(e) {
+    e.preventDefault();
     const todoDiv = document.createElement('div');
     todoDiv.classList.add("todo");
     const newTodo = document.createElement('li');
